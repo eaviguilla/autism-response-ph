@@ -12,16 +12,16 @@
       {{ $message }}
       </div>
     @enderror
-    <label for="first name"></label>
-    <input type="text" id="first name" name="first name" placeholder="First Name"value="{{ old('first name') }}">
-    @error('first name')
+    <label for="first_name"></label>
+    <input type="text" id="first_name" name="first_name" placeholder="First Name"value="{{ old('first_name') }}">
+    @error('first_name')
     <div style="color:red;">
       {{ $message }}
       </div>
     @enderror
-    <label for="last name"></label>
-    <input type="text" id="last name" name="last name" placeholder="Last Name"value="{{ old('last name') }}">
-    @error('last name')
+    <label for="last_name"></label>
+    <input type="text" id="last_name" name="last_name" placeholder="Last Name"value="{{ old('last_name') }}">
+    @error('last_name')
     <div style="color:red;">
       {{ $message }}
       </div>

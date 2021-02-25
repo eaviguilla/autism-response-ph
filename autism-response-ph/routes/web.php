@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AutismController;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
@@ -12,18 +15,21 @@ use App\Http\Controllers\RegisterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/register', [RegisterController::class, 'index'])-> name('register');
+
+Route::post('/logout', [LogoutController::class, 'store']) -> name('logout');
+
+Route::get('/login', [LoginController::class, 'index']) -> name('login');
+Route::post('/login', [LoginController::class, 'store']);
+
+Route::get('/register', [RegisterController::class, 'index']) -> name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
+Route::get('/autism', [AutismController::class, 'index']) -> name('autism');
 
 Route::get('/home', function () {
     return view('contents.landing');
-})-> name('home');
-
-Route::get('/about', function () {
-    return view('contents.about');
-})-> name('about');
+}) -> name('home');
 
 Route::get('/contact', function () {
     return view('contents.contact');
-})-> name('contact');   
+}) -> name('contact');
