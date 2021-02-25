@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-.wrapper {
-    text-align: center
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 * {
     box-sizing: border-box;
-    font-family: Raleway;
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
     color: #000000;
 }
 
@@ -21,14 +19,18 @@ body {
 
 .nav li {
     display: inline;
-    padding: 0 4%;
 }
 
 .nav a {
     display: inline-block;
-    padding: .5em;
-    color: black;
+    padding: 2em;
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-decoration: none;
+}
+
+.nav ul li:last-child a {
+    color: #73AD21 !important;
 }
 
 .nav a:hover {
@@ -37,7 +39,7 @@ body {
 
 .nav {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 30px;
     border-bottom: 50px;
 }
 
@@ -52,32 +54,353 @@ body {
     margin: 1em;
 }
 
-.content-section-right {
-    float: right;
-    margin: 1em;
-}
-
-.content-section-left {
-    float: left;
-    margin: 1em;
-}
-
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5em;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 700px;
+}
+
+.container2 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 80px;
+    text-align: justify;
+    padding-right: 5px;
+    padding-left: 60px;
 }
 
 .header {
-    text-align: center
+    text-align: center;
+    padding-top: 80px;
+    font-size: 150px;
+}
+
+.imgcard {
+    background: linear-gradient(to right, transparent 50%, #ffe4e1 50%);
+    width: auto;
+    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .img-right {
+    width: 400px;
+    height: 350px;
     float: right;
+    margin-top: 45px;
+    margin-left: 10px;
     overflow: auto;
 }
 
 .img-left {
+    width: 400px;
+    height: 350px;
     float: left;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 40px;
     overflow: auto;
+}
+
+.imgcard2 {
+    background: #1E90FF;
+    background-attachment: fixed;
+    width: auto;
+    height: 450px;
+}
+
+.mit-header {
+    position: relative;
+    font-size: 200%;
+    bottom: 200px;
+    left: 60%;
+    width: 300px;
+    padding: 2em;
+    font-family: 'Cinzel', serif;
+    background: rgba(255, 250, 228, 0.959);
+}
+
+.mit-img-left {
+    position: relative;
+    margin-top: 5%;
+    left: 30%;
+    top: 150px;
+    width: auto;
+    height: auto;
+}
+
+.content-section-right-container {
+    background: rgb(255, 226, 226);
+}
+
+.mit-dsc {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    font-family: 'Cinzel', serif;
+}
+
+.artitles {
+    position: relative;
+    left: 40%;
+    padding: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.aut-art1 {
+    position: relative;
+    bottom: 100px;
+    left: 30%;
+    width: 500px;
+    padding: 0rem;
+    margin: 0;
+    font-size: 200%;
+    font-family: 'Cinzel', serif;
+}
+
+.aut-art-img1 {
+    position: relative;
+    left: 60%;
+    width: 400px;
+    height: 350px;
+    border: 3px solid #73AD21;
+}
+
+.aut-art-disc1 {
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    font-family: 'Cinzel', serif;
+}
+
+.content-section-right-container-art {
+    background: rgb(255, 255, 255);
+}
+
+.aut-art-img2 {
+    position: relative;
+    margin-top: 50px;
+    left: 20%;
+    width: 30%;
+    height: 30%;
+    border: 3px solid #73AD21;
+}
+
+.aut-art2 {
+    position: relative;
+    bottom: 120px;
+    left: 60%;
+    width: 500px;
+    padding: 0rem;
+    margin: 0;
+    font-size: 200%;
+    font-family: 'Cinzel', serif;
+}
+
+.aut-art2-disc {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 50em;
+    font-family: 'Cinzel', serif;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    a border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.regs {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 20%;
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-bottom: 20%;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.container3 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.header2 {
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.cntcweb {
+    margin-top: 5%;
+    margin-left: 43%;
+}
+
+.cntcnum {
+    margin-left: 43%;
+}
+
+.cntccity {
+    margin-left: 43%;
+    margin-bottom: 20%;
+}
+
+.content-section-right-container-advoc {
+    background: linear-gradient(to right, transparent 25%, #56a5ff 50%);
+    width: auto;
+    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.advoc-img-left {
+    position: relative;
+    top: 50px;
+    left: 10%;
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.advoc-header {
+    position: relative;
+    font-size: 350%;
+    bottom: 350px;
+    left: 60%;
+    width: 300px;
+    padding: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.advoc-dsc {
+    position: relative;
+    bottom: 350px;
+    left: 40%;
+    margin-left: 250px;
+    margin-right: auto;
+    width: 8em;
+    background-blend-mode: normal;
+    font-family: 'Cinzel', serif;
+}
+
+.photos {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    font-family: 'Cinzel', serif;
+}
+
+.gal-pic1 {
+    position: relative;
+    object-fit: cover;
+    left: 35%;
+    margin-right: auto;
+    width: 8em;
+}
+
+.gal-dsc {
+    position: relative;
+    left: 27%;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-bottom: 10%;
+    width: 13em;
+    background-blend-mode: normal;
+}
+
+.pic1 {
+    position: relative;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pic2 {
+    position: relative;
+    height: 50%;
+    width: 40%;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pic3 {
+    position: relative;
+    height: 50%;
+    width: 35%;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pic4 {
+    position: relative;
+    height: 50%;
+    width: 35%;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pictures {
+    margin-left: 15%;
 }
