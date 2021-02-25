@@ -13,7 +13,7 @@
 		<header class="main-header">
 			<nav class="nav">
 				<!-- logo --> 
-				<img src="C:/Users/Admin/Documents/austism.web/image/autismlogo.jpg" style="width:150px;height:150px;">
+				<img src="/img/logo.png" style="width:150px;height:150px;">
 				<ul>
 					<li><a href = "{{ route('home') }}">			Home</a></li>
 					<li><a href = "">		Train</a></li>
@@ -26,6 +26,6 @@
 		</header>
 
 		@yield('content')
-		
+
   	</body>
 </html>

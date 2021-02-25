@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 * {
     box-sizing: border-box;
@@ -140,10 +140,10 @@ body {
 
 .mit-dsc {
     position: relative;
+    font-family: 'Raleway', sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 50em;
-    font-family: 'Cinzel', serif;
 }
 
 .artitles {
@@ -177,7 +177,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50em;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .content-section-right-container-art {
@@ -209,7 +209,7 @@ body {
     margin-right: auto;
     margin-bottom: 100px;
     width: 50em;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 input[type=text],
@@ -231,6 +231,7 @@ textarea {
     /* Bottom margin */
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Raleway', sans-serif;
 }
 
 input[type=password],
@@ -252,6 +253,7 @@ textarea {
     /* Bottom margin */
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Raleway', sans-serif;
 }
 
 .regs {
@@ -262,6 +264,7 @@ textarea {
     border: none;
     border-radius: 16px;
     margin-bottom: 20%;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -275,6 +278,7 @@ input[type=submit] {
     margin-bottom: 20%;
     border-radius: 16px;
     cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
 
 
