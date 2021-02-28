@@ -26,10 +26,12 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/autism', [AutismController::class, 'index']) -> name('autism');
 
-Route::get('/home', function () {
+Route::get('/home', function ()
+    {
     return view('contents.landing');
-}) -> name('home');
+    }) -> name('home');
 
-Route::get('/contact', function () {
+Route::get('/contact', function ()
+    {
     return view('contents.contact');
-}) -> name('contact');
+    }) -> name('contact');
