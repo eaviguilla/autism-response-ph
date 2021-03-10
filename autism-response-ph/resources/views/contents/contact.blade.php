@@ -4,19 +4,32 @@
 <h2 class="header2">Contact Form</h2>
 
 <div class="container3">
-  <form action="action_page.php">
+  @if(Session::get('message_sent'))
+    <div class="alert alert-success" role="alert">
+      {{Session::get('message_sent')}}
+    </div>
+  @endif
+  <form action="{{ route('contactus') }}" method ="post">
+    @csrf
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Name">
 
-    <label for="fname"></label>
-    <input type="text" id="fname" name="firstname" placeholder="Name">
-
-    <label for="lname"></label>
-    <input type="text" id="lname" name="lastname" placeholder="Email">
+    <label for="email_con"></label>
+    <input type="text" id="email_con" name="email_con" placeholder="Email">
     </select>
-
-    <label for="subject"></label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
+    @error('email_cont')
+      <div style="color:red;">
+        {{ $message }}
+      </div>
+    @enderror
+    <label for="message"></label>
+    <textarea id="subject" name="message" placeholder="Write something.." style="height:200px" value="{{ old('message') }}"></textarea>
+    @error('message')
+      <div style="color:red;">
+        {{ $message }}
+      </div>
+    @enderror
+    <button type="submit" class="regs">Submit</button>
 
   </form>
 </div>

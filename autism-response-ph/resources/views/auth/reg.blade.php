@@ -38,7 +38,7 @@
       {{ $message }}
     </div>
     @enderror
-    <select id="reg" name="reg">
+    <select id="regas" name="regas">
       <option value="" disabled selected>Register as:</option>
       <option value="repsponder">Emergency Responder</option>
       <option value="civilian">Civilian</option>
@@ -48,16 +48,9 @@
       {{ $message }}
     </div>
     @enderror
-    <label for="address"></label>
-    <input type="text" id="address" name="address" placeholder="Address:"value="{{ old('Address') }}">
+    <label for="city"></label>
+    <input type="text" id="city" name="city" placeholder="City:"value="{{ old('city') }}">
     @error('address')
-    <div style="color:red;">
-      {{ $message }}
-      </div>
-    @enderror
-    <label for="bday"></label>
-    <input type="text" id="bday" name="bday" placeholder="Birthday:"value="{{ old('bday') }}">
-    @error('bday')
     <div style="color:red;">
       {{ $message }}
       </div>

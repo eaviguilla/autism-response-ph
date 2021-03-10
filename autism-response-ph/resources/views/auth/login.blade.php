@@ -33,7 +33,7 @@
       <div class="container6">
         <p class="fpass">Not yet a member?<br>Click here to be part of us!</p>
         <div class="buttonstyle">
-          <a class="button"  href="{{ route('register') }}">Sign Up</a>
+          <a type="submit" class="button"  href="{{ route('register') }}">Sign Up</a>
         </div>
       </div>
     </div>

@@ -20,23 +20,18 @@
 				<ul>
 					@auth
 					<li><a href = "{{ route('home') }}">			Home</a></li>
-					<li><a href = "">		Train</a></li>
+					<li><a href = "{{ route('training') }}">		Train</a></li>
 					<li><a href = "{{ route('autism') }}">			About Autism</a></li>
-					<li><a href = "">		Gallery</a></li>
-					<li><a href = "{{ route('contact') }}">			Contact Us</a></li>
-					<li>
-						<form action="{{route('logout') }}" method="post">
-							@csrf
-							<button class="lgout" type="submit">Logout</a>
-						</form>
-					</li>
+					<li><a href = "{{ route('gallery') }}">			Gallery</a></li>
+					<li><a href = "{{ route('contactus') }}">		Contact Us</a></li>
+					<li><a href = "{{ route('logout') }}">			Logout</a></li>
 					@endauth
 					@guest
 					<li><a href = "{{ route('home') }}">			Home</a></li>
-					<li><a href = "">		Train</a></li>
+					<li><a href = "{{ route('training') }}">		Train</a></li>
 					<li><a href = "{{ route('autism') }}">			About Autism</a></li>
-					<li><a href = "{{ route('gallery') }}">		Gallery</a></li>
-					<li><a href = "{{ route('contact') }}">			Contact Us</a></li>
+					<li><a href = "{{ route('gallery') }}">			Gallery</a></li>
+					<li><a href = "{{ route('contactus') }}">		Contact Us</a></li>
 					<li><a href = "{{ route('login') }}">			Login</a></li>
 					@endguest
 				</ul>
