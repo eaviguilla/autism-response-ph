@@ -35,3 +35,8 @@ Route::get('/contact', function ()
     {
     return view('contents.contact');
     }) -> name('contact');
+
+    Route::get('/gallery', function ()
+    {
+    return view('contents.gallery');
+    }) -> name('gallery');
