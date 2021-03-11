@@ -1,691 +1,863 @@
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-        * {
-            box-sizing: border-box;
-            font-family: 'Cinzel', serif;
-            font-weight: normal;
-            color: #000000;
-        }
-        
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .navbg {
-            background-image: "img/logo.png";
-            background-size: cover;
-        }
-        
-        .nav ul,
-        .lgout {
-            margin: 0;
-        }
-        
-        .nav li,
-        .lgout {
-            display: inline;
-        }
-        
-        .nav a,
-        .lgout {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            display: inline-block;
-            padding: 1.5em;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            text-decoration: none;
-        }
-        
-        .nav ul li:last-child a {
-            color: #73AD21 !important;
-        }
-        
-        .nav a:hover {
-            background-color: rgb(220, 220, 220);
-        }
-        
-        .nav,
-        .lgout {
-            text-align: center;
-            font-size: 40px;
-            border-bottom: 50px;
-        }
-        
-        .main-header {
-            background-color: rgb(255, 255, 255);
-            background-image: rgb(255, 255, 255);
-            background-size: cover;
-            padding-bottom: 0;
-        }
-        
-        .flex {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .home1 {
-            background-color: #f6ffe8;
-            padding: 5%;
-        }
-        
-        .home2 {
-            background-color: #1E90FF;
-            padding: 5%;
-            align-items: center;
-        }
-        
-        .aup1 {
-            color: gray;
-        }
-        
-        .aup2 {
-            color: white;
-        }
-        
-        .aucont {
-            font-family: 'Raleway', sans-serif;
-            font-size: 30px;
-        }
-        
-        .aboutusw1 {
-            font-size: 150%;
-            width: 900px;
-            text-align: left;
-        }
-        
-        .aboutusw2 {
-            font-size: 150%;
-            width: 900px;
-            text-align: right;
-        }
-        
-        .auheader {
-            padding: 0;
-            margin: 0;
-            font-size: 150px;
-        }
-        
-        .aboutusp1,
-        .aboutusp2,
-        .advimg {
-            max-width: 750px;
-        }
-        
-        .minidiv {
-            max-width: 40%;
-        }
-        
-        .what {
-            padding: 5%;
-        }
-        
-        .wialeft {
-            max-width: 40%;
-            align-self: center;
-        }
-        
-        .wiaimg {
-            max-width: 650px;
-        }
-        
-        .wia {
-            padding: 5%;
-            width: 60%;
-        }
-        
-        .wiaw {
-            width: 1000px;
-        }
-        
-        .sp1 {
-            font-size: 100px;
-            color: #7b8075;
-        }
-        
-        .sp2 {
-            color: #7b8075;
-            font-size: 100px;
-        }
-        
-        .sp3 {
-            color: #7b8075;
-            font-size: 200px;
-        }
-        
-        .wiacont {
-            font-family: 'Raleway', sans-serif;
-            font-size: 30px;
-            color: #7b8075;
-        }
-        
-        .autismp1 {
-            margin-bottom: 150px;
-            background-color: #ededab;
-        }
-        
-        #square {
-            width: 100px;
-            height: 100px;
-            background: red;
-        }
-        
-        .autismp2 {
-            align-items: flex-start;
-            padding: 3%;
-        }
-        
-        .signs {
-            width: 49%;
-        }
-        
-        .hand {
-            width: 49%;
-        }
-        
-        .signscont {
-            font-size: 35px;
-        }
-        
-        .handcont {
-            font-size: 25px;
-        }
-        
-        .signs li,
-        .handcont li {
-            font-family: 'Raleway', sans-serif;
-            padding: 2px;
-            line-height: 1.5;
-            color: #7b8075;
-        }
-        
-        .signscont p {
-            font-family: 'Raleway', sans-serif;
-            color: #3b3b38;
-            font-size: 50px;
-        }
-        
-        .handcont p {
-            font-family: 'Raleway', sans-serif;
-            font-size: 30px;
-        }
-        
-        .handcont li {
-            line-height: 1.7;
-            padding-top: 8px;
-        }
-        
-        .sip1 {
-            color: #3b3b38;
-            font-size: 200px;
-        }
-        
-        .sip2 {
-            color: #3b3b38;
-            font-size: 100px;
-        }
-        
-        .sip3 {
-            color: #3b3b38;
-            font-size: 160px;
-        }
-        
-        .hap1 {
-            color: #3b3b38;
-            font-size: 150px;
-        }
-        
-        .hap2 {
-            color: #3b3b38;
-            font-size: 90px;
-        }
-        
-        .hap3 {
-            color: #3b3b38;
-            font-size: 50px;
-        }
-        
-        .hap4 {
-            color: #3b3b38;
-            font-size: 180px;
-        }
-        
-        .adv {
-            margin-top: 5%;
-            padding: 5%;
-            background-color: rgb(56, 156, 147, 1);
-            background: linear-gradient(to left, #389CF7 70%, #389CF7 70%, #389CF7 70%, white 30%, white 100%);
-        }
-        
-        .advcont {
-            width: 900px;
-        }
-        
-        .advhead {
-            font-size: 120px;
-            padding: 0;
-            margin: 0;
-            color: rgb(196, 173, 173);
-        }
-        
-        .advw {
-            padding: 0;
-            margin: 0;
-            font-family: 'Raleway', sans-serif;
-            font-size: 30px;
-            line-height: 1.5;
-            color: rgb(196, 173, 173);
-        }
-        
-        .prev {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .prevhead {
-            font-size: 60px;
-            color: #7b8075;
-        }
-        
-        .prevw {
-            font-family: 'Raleway', sans-serif;
-            font-size: 30px;
-            color: #7b8075;
-        }
-        
-        .gallery {
-            position: relative;
-            column-count: 4;
-            padding: 20px;
-        }
-        
-        .gall {
-            display: inline-block;
-            margin-bottom: 10px;
-            overflow: hidden;
-        }
-        
-        .img {
-            width: 100%;
-            transition: o.25s ease-in-out;
-        }
-        
-        .gall:hover img {
-            transform: scale(1.1);
-        }
-        
-        @media screen and (max-width:1024px) {
-            .gallery {
-                column-count: 3;
-            }
-        }
-        
-        @media screen and (max-width:425px) {
-            .gallery {
-                column-count: 2;
-            }
-        }
-        
-        @media screen and (max-width:375px) {
-            .gallery {
-                column-count: 1;
-            }
-        }
-        
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            /* Full width */
-            padding: 12px;
-            /* Some padding */
-            border: 1px solid #ccc;
-            /* Gray border */
-            border-radius: 4px;
-            /* Rounded borders */
-            box-sizing: border-box;
-            /* Make sure that padding and width stays in place */
-            margin-top: 6px;
-            /* Add a top margin */
-            margin-bottom: 16px;
-            /* Bottom margin */
-            resize: vertical;
-            /* Allow the user to vertically resize the textarea (not horizontally) */
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        input[type=password],
-        select,
-        textarea {
-            width: 100%;
-            /* Full width */
-            padding: 12px;
-            /* Some padding */
-            border: 1px solid #ccc;
-            /* Gray border */
-            a border-radius: 4px;
-            /* Rounded borders */
-            box-sizing: border-box;
-            /* Make sure that padding and width stays in place */
-            margin-top: 6px;
-            /* Add a top margin */
-            margin-bottom: 16px;
-            /* Bottom margin */
-            resize: vertical;
-            /* Allow the user to vertically resize the textarea (not horizontally) */
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        .regs {
-            background-color: #4CAF50;
-            color: white;
-            font-size: 20px;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 16px;
-            margin-bottom: 20%;
-            font-family: 'Raleway', sans-serif;
-        }
-        /* Style the submit button with a specific background color etc */
-        
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            margin-bottom: 20%;
-            border-radius: 16px;
-            cursor: pointer;
-            font-family: 'Raleway', sans-serif;
-        }
-        /* Add a background color and some padding around the form */
-        
-        .container3 {
-            margin-top: 7%;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            text-align: center;
-            width: 50%;
-            margin-left: 25%;
-        }
-        
-        .header2 {
-            margin-top: 2%;
-            margin-left: 25%;
-        }
-        
-        .cntcweb {
-            margin-top: 5%;
-            margin-left: 43%;
-        }
-        
-        .cntcnum {
-            margin-left: 43%;
-        }
-        
-        .cntccity {
-            margin-left: 43%;
-            margin-bottom: 20%;
-        }
-        
-        .content-section-right-container-advoc {
-            background: linear-gradient(to right, transparent 25%, #56a5ff 50%);
-            width: auto;
-            height: 450px;
-            margin-top: 50px;
-            margin-bottom: 100px;
-        }
-        
-        .advoc-img-left {
-            position: relative;
-            top: 50px;
-            left: 10%;
-            width: 250px;
-            height: 100px;
-            object-fit: cover;
-        }
-        
-        .advoc-header {
-            position: relative;
-            font-size: 350%;
-            bottom: 350px;
-            left: 60%;
-            width: 300px;
-            padding: 2rem;
-            font-family: 'Cinzel', serif;
-        }
-        
-        .advoc-dsc {
-            position: relative;
-            bottom: 350px;
-            left: 40%;
-            margin-left: 250px;
-            margin-right: auto;
-            width: 8em;
-            background-blend-mode: normal;
-            font-family: 'Cinzel', serif;
-        }
-        
-        .photos {
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            width: 8em;
-            font-family: 'Cinzel', serif;
-        }
-        
-        .gal-pic1 {
-            position: relative;
-            object-fit: cover;
-            left: 35%;
-            margin-right: auto;
-            width: 8em;
-        }
-        
-        .gal-dsc {
-            position: relative;
-            left: 27%;
-            margin-left: 150px;
-            margin-right: auto;
-            margin-bottom: 10%;
-            width: 13em;
-            background-blend-mode: normal;
-        }
-        
-        .pic1 {
-            position: relative;
-            object-fit: cover;
-            border: 3px solid rgb(95, 236, 206);
-        }
-        
-        .pic2 {
-            position: relative;
-            height: 50%;
-            width: 40%;
-            object-fit: cover;
-            border: 3px solid rgb(95, 236, 206);
-        }
-        
-        .pic3 {
-            position: relative;
-            height: 50%;
-            width: 35%;
-            object-fit: cover;
-            border: 3px solid rgb(95, 236, 206);
-        }
-        
-        .pic4 {
-            position: relative;
-            height: 50%;
-            width: 35%;
-            object-fit: cover;
-            border: 3px solid rgb(95, 236, 206);
-        }
-        
-        .pictures {
-            margin-left: 15%;
-        }
-        
-        .container5 {
-            display: inline;
-            height: 500px;
-            margin-top: 150px;
-            margin-left: 150px;
-        }
-        
-        .lognform {
-            float: left;
-        }
-        
-        .container6 {
-            float: right;
-        }
-        
-        .fpass {
-            font-family: 'Raleway', sans-serif;
-            text-align: left;
-            line-height: 1.5;
-            padding-bottom: 20px;
-        }
-        
-        button[type=submit] {
-            font-size: 20px;
-            background-color: #3CB371;
-            color: white;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            padding-left: 40px;
-            padding-right: 40px;
-            border-style: solid;
-            border-color: white;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-        
-        button[type=submit]:hover {
-            background-color: #45a049;
-        }
-        
-        .button {
-            font-size: 20px;
-            background-color: #3CB371;
-            color: white;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            padding-left: 40px;
-            padding-right: 40px;
-            border-style: solid;
-            border-color: white;
-            border-radius: 30px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        
-        .button[type=submit]:hover {
-            background-color: #45a049;
-        }
-        
-        .container4 {
-            display: inline;
-            justify-items: center;
-            margin: 0;
-        }
-        
-        .container4-0 {
-            padding: 15px;
-            background: transparent;
-            background-clip: border-box;
-            width: 600px;
-            float: left;
-            height: 650px;
-            margin-top: 5%;
-            margin-bottom: 150px;
-            margin-left: 15%;
-        }
-        
-        .container4-1 {
-            padding: 70px;
-            background: #5AC276;
-            background-clip: border-box;
-            width: 550px;
-            float: right;
-            height: 700px;
-            margin-top: 10%;
-            margin-right: 5%;
-        }
-        
-        input[name="age"] {
-            float: left;
-            width: 30%;
-        }
-        
-        select[name="sex"] {
-            float: right;
-            width: 60%;
-        }
-        
-        .header3 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 40px;
-            text-align: left;
-            margin-bottom: 70px;
-        }
-        
-        .header4 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 50px;
-            text-align: left;
-            padding-top: 0;
-            padding-bottom: 20px;
-            color: white;
-        }
-        
-        .phar {
-            font-family: 'Raleway', sans-serif;
-            color: white;
-            margin-top: 70px;
-            margin-bottom: 120px;
-        }
-        
-        .buttonstyle {
-            text-align: center;
-            margin-top: 10px;
-            padding-bottom: 10%;
-        }
-        /* mail */
-        
-        .container8 {
-            text-align: center;
-            margin-bottom: 30px;
-            background-color: transparent;
-            padding: 30px;
-        }
-        
-        .header7 {
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        .container8-1 {
-            text-align: center;
-            width: 800px;
-            font-family: 'Raleway', sans-serif;
-            line-height: 1.7;
-        }
-        
-        .trainimg {
-            margin-top: 10vh;
-            width: 25vw;
-        }
-        
-        .trainflx {
-            background-color: #e4e4b2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    font-weight: normal;
+    color: #000000;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbg {
+    background-image: "img/logo.png";
+    background-size: cover;
+}
+
+.nav ul,
+.lgout {
+    margin: 0;
+}
+
+.nav li,
+.lgout {
+    display: inline;
+}
+
+.nav a,
+.lgout {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    padding: 1.5em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+}
+
+.nav ul li:last-child a {
+    color: #73AD21 !important;
+}
+
+.nav a:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.nav,
+.lgout {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 50px;
+}
+
+.main-header {
+    background-color: rgb(255, 255, 255);
+    background-image: rgb(255, 255, 255);
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home1 {
+    background-color: #f5f5de;
+    padding: 5%;
+}
+
+.home2 {
+    background-color: #1E90FF;
+    padding: 5%;
+    align-items: center;
+}
+
+.aup1 {
+    color: gray;
+}
+
+.aup2 {
+    color: white;
+}
+
+.aucont {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.aboutusw1 {
+    font-size: 150%;
+    width: 900px;
+    text-align: left;
+}
+
+.aboutusw2 {
+    font-size: 150%;
+    width: 900px;
+    text-align: right;
+}
+
+.auheader {
+    padding: 0;
+    margin: 0;
+    font-size: 150px;
+}
+
+.aboutusp1,
+.aboutusp2,
+.advimg {
+    max-width: 750px;
+}
+
+.minidiv {
+    max-width: 40%;
+}
+
+.what {
+    padding: 5%;
+}
+
+.wialeft {
+    max-width: 40%;
+    align-self: center;
+}
+
+.wiaimg {
+    max-width: 650px;
+}
+
+.wia {
+    padding: 5%;
+    width: 60%;
+}
+
+.wiaw {
+    width: 1000px;
+}
+
+.sp1 {
+    font-size: 100px;
+    color: #7b8075;
+}
+
+.sp2 {
+    color: #7b8075;
+    font-size: 100px;
+}
+
+.sp3 {
+    color: #7b8075;
+    font-size: 200px;
+}
+
+.wiacont {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #7b8075;
+}
+
+.autismp1 {
+    margin-bottom: 150px;
+    background-color: #ededab;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.autismp2 {
+    align-items: flex-start;
+    padding: 3%;
+}
+
+.signs {
+    width: 49%;
+}
+
+.hand {
+    width: 49%;
+}
+
+.signscont {
+    font-size: 35px;
+}
+
+.handcont {
+    font-size: 25px;
+}
+
+.signs li,
+.handcont li {
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
+    line-height: 1.5;
+    color: #7b8075;
+}
+
+.signscont p {
+    font-family: 'Raleway', sans-serif;
+    color: #3b3b38;
+    font-size: 50px;
+}
+
+.handcont p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.handcont li {
+    line-height: 1.7;
+    padding-top: 8px;
+}
+
+.sip1 {
+    color: #3b3b38;
+    font-size: 200px;
+}
+
+.sip2 {
+    color: #3b3b38;
+    font-size: 100px;
+}
+
+.sip3 {
+    color: #3b3b38;
+    font-size: 160px;
+}
+
+.hap1 {
+    color: #3b3b38;
+    font-size: 150px;
+}
+
+.hap2 {
+    color: #3b3b38;
+    font-size: 90px;
+}
+
+.hap3 {
+    color: #3b3b38;
+    font-size: 50px;
+}
+
+.hap4 {
+    color: #3b3b38;
+    font-size: 180px;
+}
+
+.adv {
+    margin-top: 5%;
+    padding: 5%;
+    background-color: rgb(56, 156, 147, 1);
+    background: linear-gradient(to left, #389CF7 70%, #389CF7 70%, #389CF7 70%, white 30%, white 100%);
+}
+
+.advcont {
+    width: 900px;
+}
+
+.advhead {
+    font-size: 120px;
+    padding: 0;
+    margin: 0;
+    color: rgb(196, 173, 173);
+}
+
+.advw {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    color: rgb(196, 173, 173);
+}
+
+.prev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevhead {
+    font-size: 60px;
+    color: #7b8075;
+}
+
+.prevw {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #7b8075;
+}
+
+.gallery {
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+}
+
+.gall {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    transition: o.25s ease-in-out;
+}
+
+.gall:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1024px) {
+    .gallery {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    a border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Raleway', sans-serif;
+}
+
+.regs {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 20%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-bottom: 20%;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.container3 {
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.header2 {
+    margin-top: 4%;
+    margin-left: 25%;
+    font-size: 35px;
+}
+
+.cntcweb {
+    margin-top: 5%;
+    margin-left: 43%;
+}
+
+.cntcnum {
+    margin-left: 43%;
+}
+
+.cntccity {
+    margin-left: 43%;
+    margin-bottom: 20%;
+}
+
+.content-section-right-container-advoc {
+    background: linear-gradient(to right, transparent 25%, #56a5ff 50%);
+    width: auto;
+    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.advoc-img-left {
+    position: relative;
+    top: 50px;
+    left: 10%;
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.advoc-header {
+    position: relative;
+    font-size: 350%;
+    bottom: 350px;
+    left: 60%;
+    width: 300px;
+    padding: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.advoc-dsc {
+    position: relative;
+    bottom: 350px;
+    left: 40%;
+    margin-left: 250px;
+    margin-right: auto;
+    width: 8em;
+    background-blend-mode: normal;
+    font-family: 'Cinzel', serif;
+}
+
+.photos {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    font-family: 'Cinzel', serif;
+}
+
+.gal-pic1 {
+    position: relative;
+    object-fit: cover;
+    left: 35%;
+    margin-right: auto;
+    width: 8em;
+}
+
+.gal-dsc {
+    position: relative;
+    left: 27%;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-bottom: 10%;
+    width: 13em;
+    background-blend-mode: normal;
+}
+
+.pic1 {
+    position: relative;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pic2 {
+    position: relative;
+    height: 50%;
+    width: 40%;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pic3 {
+    position: relative;
+    height: 50%;
+    width: 35%;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pic4 {
+    position: relative;
+    height: 50%;
+    width: 35%;
+    object-fit: cover;
+    border: 3px solid rgb(95, 236, 206);
+}
+
+.pictures {
+    margin-left: 15%;
+}
+
+.container5 {
+    display: inline;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.lognform {
+    float: left;
+}
+
+.container6 {
+    float: right;
+}
+
+.fpass {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+button[type=submit] {
+    font-size: 20px;
+    background-color: #3CB371;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.examsubmit {
+    font-size: 20px;
+    background-color: #3CB371;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.examsubmit:hover {
+    background-color: #45a049;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.button {
+    font-size: 20px;
+    background-color: #3CB371;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container4 {
+    display: inline;
+    justify-items: center;
+    margin: 0;
+}
+
+.container4-0 {
+    padding: 15px;
+    width: 600px;
+    float: left;
+    height: 650px;
+    margin-top: 5%;
+    margin-bottom: 150px;
+    margin-left: 15%;
+}
+
+.container4-1 {
+    padding: 70px;
+    background: #5AC276;
+    background-clip: border-box;
+    width: 550px;
+    float: right;
+    height: 700px;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+input[name="age"] {
+    float: left;
+    width: 30%;
+}
+
+select[name="sex"] {
+    float: right;
+    width: 60%;
+}
+
+.header3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.header4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.phar {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.buttonstyle {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 5%;
+}
+
+
+/* mail */
+
+.container8-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    background-color: transparent;
+    margin: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.container8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    background-color: #f5f5de;
+    margin: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.header7 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.container8-1 {
+    text-align: center;
+    width: 600px;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+    text-align: justify;
+    color: white;
+}
+
+.container8-0 li {
+    text-align: center;
+    width: 600px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+    text-align: justify;
+    color: white;
+}
+
+.trainimg {
+    background-size: cover;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.trainflx {
+    background-color: #5AC276;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainhow {
+    text-align: center;
+    margin: 2%;
+    font-size: 100px;
+    font-weight: 700;
+    color: #767973;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* result */
+
+.container9 {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0%;
+    background: white;
+    background-position: left top;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.container10 {
+    background-color: #5AC276;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    background-position: left top;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.container11 {
+    font-family: 'Raleway', sans-serif;
+    width: 600px;
+}
+
+.container12 {
+    display: flex;
+    background-color: #F0FFFF;
+    width: 50vw;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+.questions {
+    padding-top: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ques {
+    width: 700px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.answer {
+    width: 700px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.result {
+    font-size: 40px;
+}
+
+.comm {
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.container7 {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+.header5 {
+    font-size: 40px;
+    text-align: center;
+    background-color: #5AC276;
+}
+
+.header6 {
+    font-family: 'Raleway', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+.header8 {
+    font-family: 'Raleway', sans-serif;
+    padding: 3%;
+    font-size: 30px;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    background-color: #f5f5de;
+}
+
+.phar2 {
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: 'Raleway', sans-serif;
+    text-indent: 30px;
+}

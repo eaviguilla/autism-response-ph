@@ -1,16 +1,24 @@
 @extends('home.main')
 
 @section('content')
+<div>
+    <img src="img/train.jpg" class="trainimg">
+</div>
+<h2 class="trainhow">How You Can Help</h2>
+
 <div class="trainflx">
-    <img src="img/gall2.jpg" class="trainimg">
-    <div class="container8">
+    <div class="container8-0">
 	    <h2 class="header7">Autism Response PH Basic Training</h2>
 	    <p class="container8-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        This training will help you start learning the things you need to be knowledgeable in dealing with people with autism in times of natural disasters. This is crucial to learn since people with autism are more likely to die from natural disasters than an average person. By having you learn all this, you will be able to save the lives of the people with autism from preventable accidents or death. 
+        By the end of this training you will learn the following things:
         </p>
-    </div>	
+        <li>Things to bring for an autistic person</li>
+        <li>How to approach an autistic person</li>
+        <li>How to respond in a water emergency situation</li>
+    </div>
     <div class="buttonstyle">
- 	    <a type="submit" class="button" href="">Get Started</a>
+ 	    <a type="submit" class="button" href="{{ route('reviewer') }}">Get Started</a>
     </div>
 </div>
 @endsection

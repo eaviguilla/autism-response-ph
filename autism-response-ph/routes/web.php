@@ -6,6 +6,7 @@ use App\Http\Controllers\AutismController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TrainingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +31,8 @@ Route::post('/contactus', [ContactController::class, 'store']);
 
 Route::get('/autism', [AutismController::class, 'index']) -> name('autism');
 
+Route::get('/rain', [TrainingController::class, 'index']) -> name('reviewer');
+
 Route::get('/home', function ()
     {
     return view('contents.landing');
@@ -44,3 +47,14 @@ Route::get('/train', function ()
     {
     return view('train.train_land');
     }) -> name('training');
+
+Route::get('/exam', function ()
+    {
+    return view('train.exam');
+    }) -> name('exam');
+
+Route::get('/result', function ()
+    {
+    return view('train.result');
+    }) -> name('result');
+    

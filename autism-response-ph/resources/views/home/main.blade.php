@@ -8,6 +8,7 @@
     <title>Autism Response PH</title>
 	<link rel="icon" href="/img/logo.png">
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="{{ asset('/js/quiz.js') }} "></script>
 </head>
 
 <body>

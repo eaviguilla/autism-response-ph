@@ -11,7 +11,7 @@
         </h1>
         <p class="advw">
             Republic Act No. 7277 - An Act Providing For The Rehabilitation, Self-Development And Self-Reliance Of Disabled Person And Their Integration Into The Mainstream Of Society And For 
-            Other Purposes. 
+            Other Purposes.<br> 
             Republic Act No. 10871 - An Act Requiring Basic Education Students to Undergo Age-Appropriate Basic Life Support Training
             And give free orientation on autism awareness for public.
         </p>

@@ -91,9 +91,13 @@
   <div class="container4-1">
     <h3 class="header4">How You Can <br>Make A Change</h3>
     <p class="phar">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Donating would help not only to improve the training but it would also help spread awareness of the underlying factors that affect people with autism in dire situations<br><br>It would also help in improving and increasing the amount of  autism response kit that would be given to the first responders.<br>      Account Name: Justice Schmidt<br><br>
+      Bank Account Numbers:<br>
+      BDO: 342617092645<br>
+      PNB: 5347129962963<br>
+      BPI: 87775572919007<br>
     </p>
+
   </div>
 </div>
 @endsection
