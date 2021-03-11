@@ -33,7 +33,7 @@ Route::get('/autism', [AutismController::class, 'index']) -> name('autism');
 
 Route::get('/rain', [TrainingController::class, 'index']) -> name('reviewer');
 
-Route::get('/home', function ()
+Route::get('/', function ()
     {
     return view('contents.landing');
     }) -> name('home');
